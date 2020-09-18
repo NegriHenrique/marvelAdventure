@@ -1,0 +1,32 @@
+#home.landing-page {
+  height: 100vh;
+  width: 100vw;
+  background: var(--main-color-darken);
+  background-image: url("../../assets/70-468_3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: soft-light;
+}
+
+#home.landing-page .wrapper h2 {
+  font-size: 3rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#home.landing-page .wrapper a {
+  height: 6rem;
+  font-size: 2.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+}
+
+@media screen and (min-width: 576px) {
+  #home.landing-page .wrapper h2 {
+    font-size: 4.8rem;
+  }
+}

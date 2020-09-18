@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap");
+
+:root {
+  font-size: 60%;
+
+  --main-color: #e23636;
+  --main-color-darken: #8a2222;
+  --dark-color: #000000;
+  --grey-color: #504a4a;
+  --blue-color: #518cca;
+  --orange-color: #f78f3f;
+  --bg-body-default: #e5e5e5;
+  --input-bg: #ebebeb;
+
+  --height-header: 80px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-body-default) !important;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Montserrat", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul li {
+  list-style: none;
+}
+
+.btn-primary {
+  background: var(--main-color) !important;
+  background: -webkit-linear-gradient(
+    to right,
+    var(--dark-color),
+    var(--main-color)
+  ) !important;
+  background: linear-gradient(
+    to right,
+    var(--dark-color),
+    var(--main-color)
+  ) !important;
+  border: none !important;
+  outline: 0 !important;
+}
+
+.btn-primary:hover {
+  background: var(--main-color) !important;
+  background: -webkit-linear-gradient(
+    to left,
+    var(--dark-color),
+    var(--main-color)
+  ) !important;
+  background: linear-gradient(
+    to left,
+    var(--dark-color),
+    var(--main-color)
+  ) !important;
+  border: none !important;
+  outline: 0 !important;
+}
