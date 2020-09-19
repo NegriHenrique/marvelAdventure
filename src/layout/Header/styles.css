@@ -3,6 +3,7 @@ header nav.menu {
   color: white;
   height: var(--height-header);
   background: var(--dark-color);
+  z-index: 9;
 }
 
 header nav.menu .img img {

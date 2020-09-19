@@ -1,3 +1,28 @@
 #catalogo {
   padding-top: var(--height-header);
 }
+
+#catalogo nav.filter-view > ul {
+  font-size: 1.8rem;
+}
+
+#catalogo nav.filter-view > ul > li {
+  margin-right: 1.3rem;
+  color: var(--icons-filter);
+}
+
+#catalogo nav.filter-view > ul > li:hover {
+  color: var(--dark-color);
+}
+
+#catalogo nav.filter-view > ul > li.active {
+  color: var(--dark-color);
+}
+
+#catalogo nav.filter-view > ul > li:last-child {
+  margin-right: 0;
+}
+
+#catalogo nav.filter-view > ul > li.pointer {
+  cursor: pointer;
+}
