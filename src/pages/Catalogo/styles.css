@@ -26,3 +26,37 @@
 #catalogo nav.filter-view > ul > li.pointer {
   cursor: pointer;
 }
+
+#catalogo aside.filtros {
+  font-size: 1.3rem;
+}
+
+#catalogo aside.filtros h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  line-height: 2.8rem;
+}
+
+#catalogo aside.filtros .title {
+  margin-bottom: 0.8rem;
+  font-size: 1.7rem;
+  color: var(--grey-color);
+  font-weight: 500;
+}
+
+#catalogo aside.filtros div[class^="decada-"] {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: baseline;
+  cursor: pointer;
+}
+
+#catalogo aside.filtros div[class^="decada-"]:last-child {
+  margin-bottom: 0;
+}
+
+#catalogo aside.filtros div[class^="decada-"] > span {
+  padding-left: 1rem;
+}

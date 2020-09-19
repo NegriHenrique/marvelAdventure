@@ -68,3 +68,7 @@ ul li {
   border: none !important;
   outline: 0 !important;
 }
+
+.checkbox svg {
+  color: var(--main-color);
+}
