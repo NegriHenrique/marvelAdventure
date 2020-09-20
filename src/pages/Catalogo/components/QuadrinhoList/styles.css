@@ -1,0 +1,19 @@
+.list-view {
+  text-decoration: none !important;
+}
+
+.list-view .infos {
+  font-size: 2.7rem;
+}
+
+.list-view .infos .title {
+  color: var(--dark-color);
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.list-view .infos .description {
+  color: var(--grey-color);
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+}

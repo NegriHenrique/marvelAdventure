@@ -11,6 +11,7 @@
   --orange-color: #f78f3f;
   --bg-body-default: #e5e5e5;
   --input-bg: #ebebeb;
+  --bg-info: #ebebeb;
   --icons-filter: #d1d1d1;
 
   --height-header: 80px;
@@ -23,6 +24,7 @@
 
 body {
   background: var(--bg-body-default) !important;
+  overflow-x: hidden !important;
 }
 
 body,
@@ -33,42 +35,119 @@ button {
   -webkit-font-smoothing: antialiased;
 }
 
+button:focus,
+a.btn:focus {
+  outline: 0 !important;
+}
+
 ul li {
   list-style: none;
+}
+
+ul.breadcrumbs {
+  display: flex;
+  font-size: 1.7rem;
+}
+ul.breadcrumbs > li {
+  margin-right: 2rem;
+  position: relative;
+}
+
+ul.breadcrumbs > li:after {
+  content: "/";
+  position: absolute;
+  right: -1rem;
+}
+
+ul.breadcrumbs > li:last-child:after {
+  content: "";
+}
+
+.bg-none {
+  background: unset;
+}
+
+.bg-info {
+  background-color: var(--bg-info) !important;
 }
 
 .btn-primary {
   background: var(--main-color) !important;
   background: -webkit-linear-gradient(
     to right,
-    var(--dark-color),
+    var(--main-color-darken),
     var(--main-color)
   ) !important;
   background: linear-gradient(
     to right,
-    var(--dark-color),
+    var(--main-color-darken),
     var(--main-color)
   ) !important;
   border: none !important;
   outline: 0 !important;
+  transition: background 0.6s ease !important;
+  position: relative !important;
+  z-index: 1;
 }
 
-.btn-primary:hover {
+.btn-primary > span {
+  z-index: 3;
+}
+
+.btn-primary:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 50rem;
+  z-index: 2;
+  opacity: 0;
+  width: 100%;
   background: var(--main-color) !important;
   background: -webkit-linear-gradient(
     to left,
-    var(--dark-color),
+    var(--main-color-darken),
     var(--main-color)
   ) !important;
   background: linear-gradient(
     to left,
-    var(--dark-color),
+    var(--main-color-darken),
     var(--main-color)
   ) !important;
   border: none !important;
   outline: 0 !important;
+  transition: opacity 0.4s linear;
+}
+
+.btn-primary:hover:after {
+  opacity: 1;
 }
 
 .checkbox svg {
+  color: var(--main-color);
+}
+
+.toggableIcon {
+  transition: all 0.2s ease-out;
+}
+
+.toggableIcon.open {
+  transform: rotate(180deg);
+}
+
+.page-padding-header {
+  padding-top: var(--height-header);
+}
+
+.page-padding-header .title-page .title {
+  font-size: 2.8rem;
+}
+
+.page-padding-header .title-page .subtitle {
+  font-size: 1.5rem;
+}
+
+.price {
   color: var(--main-color);
 }

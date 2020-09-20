@@ -1,0 +1,8 @@
+.quantidade-actions {
+  color: var(--main-color);
+  background: unset;
+}
+
+.quantidade-actions:hover {
+  color: var(--main-color-darken);
+}

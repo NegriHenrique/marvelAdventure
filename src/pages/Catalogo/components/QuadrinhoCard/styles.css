@@ -1,5 +1,27 @@
+.quadrinho-card {
+  text-decoration: none !important;
+  transition: all 0.2s ease-out;
+}
+
+.quadrinho-card:hover {
+  -webkit-box-shadow: 6px 13px 48px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 13px 48px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 13px 48px -20px rgba(0, 0, 0, 0.75);
+}
+
+.quadrinho-card .imagem button {
+  bottom: 1rem;
+  left: 1rem;
+  width: calc(100% - 2rem);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2rem;
+}
+
 .quadrinho-card h4 {
   font-size: 2rem;
+  color: var(--dark-color);
 }
 
 .quadrinho-card .price {

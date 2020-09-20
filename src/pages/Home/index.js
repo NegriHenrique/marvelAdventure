@@ -18,7 +18,7 @@ function Home() {
           to="/catalogo"
           className="btn btn-primary text-uppercase font-weight-bold p-2 rounded-pill"
         >
-          Navegar
+          <span>Navegar</span>
         </Link>
       </div>
     </div>
