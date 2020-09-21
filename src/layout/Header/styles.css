@@ -86,61 +86,10 @@ header nav.menu ul#actions li .dropdown-usuario {
   font-size: 1.6rem;
 }
 
-header .carrinho.float {
-  height: 100vh;
-  width: 100vw;
-  left: 100vw;
-  background: white;
-  transition: all 0.4s ease;
-  z-index: 9999;
-}
-
-header .carrinho.float.active {
-  left: 0;
-}
-
-header .carrinho.float h2 {
-  font-size: 3.4rem;
-}
-
-header .carrinho.float .preco-final {
-  font-size: 2.5rem;
-  color: var(--main-color);
-}
-
-header .carrinho.float .preco-final > strong {
-  color: var(--dark-color);
-}
-
-header .carrinho.float .finalizar-compra button {
-  font-size: 2rem;
-}
-
-header .carrinho.float .list-items .infos {
-  font-size: 1.8rem;
-}
-
-header .carrinho.float .list-items .infos .botao-delete {
-  color: var(--main-color);
-  background: unset;
-}
-
-header .carrinho.float .list-items .infos .botao-delete:hover {
-  color: var(--main-color-darken);
-}
-
 @media screen and (min-width: 768px) {
   header nav.menu ul#categorias {
     order: inherit;
     background: unset;
-  }
-
-  header .carrinho.float {
-    width: 30vw;
-  }
-
-  header .carrinho.float.active {
-    left: calc(100vw - 30vw);
   }
 
   header nav.menu ul#categorias li a {

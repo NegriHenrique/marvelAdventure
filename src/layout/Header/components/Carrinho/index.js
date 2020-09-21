@@ -10,7 +10,7 @@ function Carrinho({ carrinhoAberto, setCarrinhoAberto }) {
   const carrinhoStore = useAppContext();
   return (
     <div
-      className={`carrinho float position-absolute ${
+      className={`carrinho float position-fixed ${
         carrinhoAberto ? "active" : ""
       }`}
     >

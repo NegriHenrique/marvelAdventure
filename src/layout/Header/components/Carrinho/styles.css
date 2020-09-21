@@ -1,5 +1,6 @@
 .carrinho.float.active {
   left: 0;
+  visibility: initial;
 }
 
 .carrinho.float h2 {
@@ -30,4 +31,58 @@
 
 .carrinho.float .list-items .infos .botao-delete:hover {
   color: var(--main-color-darken);
+}
+
+.carrinho.float {
+  height: 100vh;
+  width: 100vw;
+  left: 100vw;
+  background: white;
+  transition: all 0.4s ease;
+  z-index: 9999;
+  visibility: hidden;
+}
+
+.carrinho.float.active {
+  left: 0;
+}
+
+.carrinho.float h2 {
+  font-size: 3.4rem;
+}
+
+.carrinho.float .preco-final {
+  font-size: 2.5rem;
+  color: var(--main-color);
+}
+
+.carrinho.float .preco-final > strong {
+  color: var(--dark-color);
+}
+
+.carrinho.float .finalizar-compra button {
+  font-size: 2rem;
+}
+
+.carrinho.float .list-items .infos {
+  font-size: 1.8rem;
+}
+
+.carrinho.float .list-items .infos .botao-delete {
+  color: var(--main-color);
+  background: unset;
+}
+
+.carrinho.float .list-items .infos .botao-delete:hover {
+  color: var(--main-color-darken);
+}
+
+@media screen and (min-width: 768px) {
+  .carrinho.float {
+    width: 30vw;
+  }
+
+  .carrinho.float.active {
+    left: calc(100vw - 30vw);
+  }
 }
