@@ -26,7 +26,10 @@ function Carrinho({ carrinhoAberto, setCarrinhoAberto }) {
         </h2>
         <div className="col mb-5 list-items overflow-auto">
           {carrinhoStore.carrinho.map((quadrinho, index) => (
-            <div className={` quadrinho-${quadrinho.id} d-flex mb-5`}>
+            <div
+              key={quadrinho.id}
+              className={` quadrinho-${quadrinho.id} d-flex mb-5`}
+            >
               <img
                 src={`${quadrinho.thumbnail.path}.${quadrinho.thumbnail.extension}`}
                 alt="capa"

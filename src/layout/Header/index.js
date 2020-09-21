@@ -72,7 +72,6 @@ function Header() {
               {carrinhoStore.carrinho.length > 0
                 ? carrinhoStore.carrinho.reduce(
                     (accumulator = 0, currentValue) => {
-                      console.log(currentValue.quantidade);
                       return accumulator + currentValue.quantidade;
                     }
                   )
